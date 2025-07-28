@@ -1,43 +1,46 @@
-# Diario-de-aprendizado
- um projeto pessoal onde eu, Vinicius Anderson (vinniscodes), registro minha jornada no universo da programação. Mais do que um simples bloco de notas, este é um sistema interativo e visualmente imersivo feito para me ajudar a acompanhar cursos, anotar insights e monitorar meu tempo de estudo diário.
+# 🚀 VinnisCodes - Plataforma de Estudos Cyberpunk
 
+![HTML](https://img.shields.io/badge/HTML5-E34F26?style=flat&logo=html5&logoColor=white)
+![CSS](https://img.shields.io/badge/CSS3-1572B6?style=flat&logo=css3&logoColor=white)
+![JavaScript](https://img.shields.io/badge/JavaScript-ES6+-F7DF1E?style=flat&logo=javascript&logoColor=black)
 
-🛠️ Stack Tecnológica e Como o Projeto Funciona
+> Projeto 100% front-end com tema visual neon/cyberpunk e foco em produtividade pessoal nos estudos.
 
-Esse projeto é todo feito só com HTML, CSS e JavaScript — ou seja, 100% front-end. Aqui vai o resumo do que foi usado e como:
+---
 
-🧱 HTML5: Estrutura do Site
-Usei tags semânticas como <header>, <main>, <section>, <footer> pra deixar o código mais organizado e fácil de entender.
+## 🌐 Stack Utilizada
 
-Os inputs (<input>, <textarea>) e botões (<button>, <a>) são a parte da interface onde o usuário interage.
+### 🧱 HTML5 (Estrutura)
+- Estrutura semântica com `<header>`, `<main>`, `<footer>`, etc.
+- Inputs interativos com `<input>`, `<textarea>`, `<button>`, `<a>`.
+- Integração com recursos externos:
+  - Google Fonts
+  - Font Awesome
+  - Particles.js (background animado)
 
-Recursos externos tipo Google Fonts, Font Awesome, CSS externo e Particles.js são puxados com <link> e <script>.
+### 🎨 CSS3 (Estilo)
+- Tema cyberpunk com cores neon e variáveis CSS para manutenção fácil.
+- Layout responsivo com **Grid** e **Flexbox**.
+- Animações com `@keyframes` e `transition` para botões, títulos e barras.
+- Efeitos visuais com `::before` e `::after`, simulando brilho e glitch.
 
-🎨 CSS3: Visual Neon/Cyberpunk
-Estilo todo baseado em cores neon, tipo aquele visual cyberpunk.
+### 🧠 JavaScript ES6+ (Lógica)
+- Manipulação do DOM com `getElementById` e eventos.
+- **Local Storage** usado para salvar todos os dados:
+  - Cursos (`vinniscodesCursos`)
+  - Notas (`vinniscodesNotas`)
+  - Check-in diário (`vinniscodesCheckinDiaAtual`, `vinniscodesCheckinHistorico`)
+- Timer com `setInterval()` salvando progresso automaticamente.
+- Validação de dados e notificações visuais (`showNotification`).
 
-Usei variáveis CSS (no :root) pra facilitar a troca de cores e manutenção.
+---
 
-O layout é feito com Grid e Flexbox, então o site se adapta bem em qualquer tela.
+## 📋 Funcionalidades
 
-Tem animações com @keyframes e transições pra deixar os botões, títulos e outros elementos mais vivos.
+✅ Cadastro, edição e exclusão de **cursos**  
+✅ Sistema de **notas pessoais** com IDs únicos  
+✅ Registro de **tempo de estudo diário (check-in)**  
+✅ **Feedback visual** em tempo real com animações e notificações  
+✅ Design futurista com **particles.js** no fundo
 
-Pseudoelementos ::before e ::after ajudam a criar efeitos tipo brilho sem precisar colocar mais HTML.
-
-🧠 JavaScript: Funcionalidade e Lógica
-Faço toda a parte de interação usando document.getElementById() e addEventListener() — escuto cliques, inputs, etc.
-
-Os dados ficam salvos no navegador usando Local Storage:
-
-Cursos ficam no array cursos, salvos na chave 'vinniscodesCursos'.
-
-Notas ficam no array notas, salvos na chave 'vinniscodesNotas' (cada nota tem um ID único).
-
-Check-in diário salva o tempo de estudo e histórico em 'vinniscodesCheckinDiaAtual' e 'vinniscodesCheckinHistorico'. Um setInterval() atualiza o cronômetro todo segundo.
-
-Sempre que o usuário faz alguma ação, uso uma função showNotification() pra dar retorno visual (tipo "salvo com sucesso", "preencha o campo", etc).
-
-Também tem validação nos inputs, pra garantir que os dados digitados fazem sentido.
-
-🌌 Particles.js
-Usei pra criar um fundo animado com partículas que interagem com o mouse. Dá aquele toque mais tecnológico pro site.
+** Texto reformulado com IA para ajudar no entendimento tecnico do projeto. ** ass: Vinicius Anderson @vinniscodes <3
